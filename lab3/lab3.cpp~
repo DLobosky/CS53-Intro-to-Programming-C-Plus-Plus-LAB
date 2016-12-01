@@ -1,0 +1,72 @@
+// Programmer: Dalton Lobosky       Date: 02/12/2013
+// Section B
+// A program to compute the roots of the quadratic equation, or to determine if
+//  if there are any roots
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+  // Variable Declaration
+  float a, b, c, root1, root2, sngl_root, disc;
+  char cAgain;
+  
+  do
+  {
+    // Greeting
+    cout << endl << endl << "Hello. Welcome to the Quadratic Root Calculator."
+    << endl << endl;
+  
+    // "a" Prompt
+    cout << "Please enter your value for \"A\"" << endl << endl << endl;
+    cin >> a;
+    
+    // "b" Prompt
+    cout << "Please enter your value for \"B\"" << endl << endl << endl;
+    cin >> b;
+    
+    // "c" Prompt
+    cout << "Please enter your value for \"C\"" << endl << endl << endl;
+    cin >> c;
+    
+    disc = (b * b - 4 * a * c);
+    
+    if (disc < 0)
+    {
+      cout << endl << endl << "There are no real roots for the values that you"
+      << " entered. " << endl;
+    }
+    
+    if (disc == 0)
+    {
+      sngl_root = (-b) / (2 * a);
+    
+      cout << endl << endl << "Your single root is: " << sngl_root << endl;
+    }
+
+    if (disc > 0)
+    {
+      root1 = (-b + sqrt(b * b - 4 * a * c)) / (2 * a);
+       
+      root2 = (-b - sqrt(b * b - 4 * a * c)) / (2 * a);
+           
+      cout << endl << endl << "Root 1 = " << root1 << endl;
+    
+      cout << endl << endl << "Root 2 = " << root2 << endl;
+    }
+    
+    cout << endl << endl << "Would you like to go again? Press \"y\" for yes "
+    << "or \"n\" for no." << endl;
+    cin >> cAgain;
+    
+  }while (cAgain == 'y' || cAgain == 'Y'); 
+  
+  return 0;
+}
+    
+    
+    
+    

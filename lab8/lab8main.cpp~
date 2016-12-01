@@ -1,0 +1,21 @@
+// Programmer: Dalton Lobosky             Date: 03/19/2013
+// File: lab8main.cpp                            Section: C
+// Purpose: Contains the int main() function that drives the lab8header.h
+//          file
+//******************************************************************************
+
+#include "lab8header.h"
+#include <iostream>
+using namespace std;
+
+
+int main()
+{
+  greet_User();
+  get_Data();
+  sort_Data();
+  print_Data();
+  goodbye();  
+
+  return 0;
+}

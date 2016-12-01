@@ -1,0 +1,67 @@
+
+*** These modified files were found in JOE when it aborted on Wed Apr  3 22:22:58 2013
+*** JOE was aborted because the terminal closed
+
+*** File 'lab9main.cpp'
+// Programmer: Dalton Lobosky             Date: 04/2/2013
+// File: lab9main.cpp                            Section: B
+// Purpose: Contains the int main() function that drives the lab9header.h
+//          file
+//******************************************************************************
+
+#include "lab9header.h"
+#include <iostream>
+using namespace std;
+
+
+int main()
+{
+  char source[50], search[50];
+  char again = 'y';
+  
+  do
+  {
+    bool found = false;
+
+    get_Data(source, search);
+    found = find_Substr(source, search);
+    print_Result(found);
+    
+    cout << "\n\nWould you like to go again? (y/n)" << endl << endl;
+    cin >> again;
+    
+  }while(again == 'y');
+  return 0;
+}
+
+
+
+
+*** File '(Unnamed)'
+lab9main.cpp
+lab9main.cpp
+lab9header.h
+lab9header.h
+lab9header.h
+lab9func.cpp
+lab9main.cpp
+lab9func.cpp
+lab9header.h
+lab9func.cpp
+lab9main.cpp
+
+*** These modified files were found in JOE when it aborted on Tue Apr  9 12:43:49 2013
+*** JOE was aborted because the terminal closed
+
+*** File '(Unnamed)'
+lab9header.h
+lab9header.h
+lab9header.h
+lab9func.cpp
+lab9main.cpp
+lab9func.cpp
+lab9header.h
+lab9func.cpp
+lab9header.h
+lab9func.cpp
+lab9main.cpp

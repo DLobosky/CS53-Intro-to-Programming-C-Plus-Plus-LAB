@@ -1,0 +1,40 @@
+//Name: Dalton Lobosky
+//Section: B
+//Date: 05/07/2013
+//Description: Faulty program to be examined with gdb
+
+
+
+
+#include <iostream>
+using namespace std;
+
+
+//Description:Divides two integers and returns the result
+//Pre: Reciprocal cannot be 0
+//Post: resturns the quotient of the input parameters
+int divint(int a,  int b);
+
+int main ()
+{
+  int x=5, y = 2, c = 4, d = 1;
+  cout << divint (x,y) << endl;
+  
+  cout << divint (c,d) << endl;
+   
+  char chararr [10] = "goodbye";
+  int i = 0;
+  for(int i = 0; ; i++)
+  
+    cout << chararr[i];
+ 
+  cout << endl;
+  return 0;
+}
+int divint(int a, int b)
+{
+ int retval = a / b;
+ return retval;
+
+}
+
